@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/google-font.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/font-awesome.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Integrated Land Records Management System</title>
+
+
+    <style>
+        .row-home a{
+            display: block;
+            background: #ffffff;
+            padding: 13px;
+            margin-bottom: 10px;
+            color: #000;
+            font-size: 14px;
+            position: relative;
+            padding-left: 45px;
+        }
+        .row-home a .fas, .row-home a .fab{
+            position: absolute;
+            left: 15px;
+            color: #538924;
+            top: 50%;
+            margin-top: -11px;
+            font-size: 18px;
+        }
+        .application-list{
+            padding: 0px;
+            margin: 0px;
+        }
+        .application-list li{
+            background: #fff;
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+        .list-data p{
+            margin: 0px;
+            font-size: 12px;
+        }
+        .list-data lable{
+            font-size: 13px;
+            color: black;
+            font-weight: 500;
+        }
+        .list-data{
+            margin-bottom: 3px;
+        }
+        @media (min-width:768px ) {
+            .city-wp{
+                display: flex;
+                justify-content: space-between;
+            }
+            .row-home{
+                min-width: 317px;
+            }
+            .right-city{
+                width: 100%;
+                margin-left: 15px;
+                background: #fff;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+                -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+                -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+                -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+            }
+            .title-4{
+                margin-top: 0px;
+                color: #538924;
+                font-size: 16px;
+            }
+            .btn{
+                font-size: 13px;
+            }
+            .row-home a {
+                padding: 13px !important;
+                padding-right: 27px !important;
+                padding-left: 45px !important;
+                transition: 0.1s;
+            }
+            .row-home a:last-child{
+                margin-bottom: 0px;
+            }
+            .table{
+                margin-bottom: 0px;
+            }
+        }
+    </style>
+</head>
+<body class="web-sidebar-open">
+<div class="mobile-header">
+    <a href="#" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    <p>Citizen Dashboard</p>
+    <div class="right-controls">
+        <a href="home.html"><img src="images/Home.svg" alt=""></a>
+        <a href="splash.html"><img src="images/logout.svg" alt=""></a>
+        <a class="show-web-only" href="#"><img src="images/user.svg" alt=""> <span class="user-name">Welcome Yogi</span></a>
+    </div>
+</div>
+
+<div class="sidebar">
+    <div class="app-brand">
+        <img src="images/telangana_logo.png" alt="img">
+        <p>ధరణి | دھرنی | Dharani</p>
+        <button type="button" class="menu-toggle"><i class="far fa-times-circle"></i></button>
+    </div>
+    <ul>
+        <li><a href="#">Slot booking for Citizen</a></li>
+        <li><a href="Land-Details-Search.html">Land Details Search</a></li>
+        <li><a href="Prohibited-Lands.html">Prohibited Lands</a></li>
+        <li><a href="Encumbrance-Details.html">Encumbrance Details</a></li>
+        <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
+    </ul>                                
+</div>
+<div class="content-wrapper">
+    <div class="city-wp">
+        <div class="row-home">
+            <a class="box-radius" href="pre-registration.html">Application for registration (sale & gift) <i class="fas fa-address-book"></i></a>
+            <a class="box-radius" href="pre-registration.html">Application for Mortgage<i class="fas fa-receipt"></i></a>
+            <a class="box-radius" href="partition.html">Application for Partition <i class="fas fa-chart-pie"></i></a>
+            <a class="box-radius" href="succession.html">Application for Succession <i class="fas fa-passport"></i></a>
+            <a class="box-radius" href="#">Application for NALA <i class="fas fa-file-alt"></i></a>
+            <a class="box-radius" href="slot-reschedule.html">Slot Reschedule <i class="fas fa-calendar-check"></i></a>
+            <a class="box-radius" href="#">Registration Payment <i class="fab fa-cc-visa"></i></a>
+        </div>
+
+        <div class="right-city">
+            <h4 class="title-4">My Applications</h4>
+            <ul class="show-mobile-only application-list">
+            <li class="box-radius"  >
+                <div class="list-data" style="width: 50%;float: left; padding-rightt: 5px">
+                    <lable>Application Number</lable>
+                    <p>204575455</p>
+                </div>
+                <div class="list-data">
+                    <lable>Type Of Application</lable>
+                    <p>Registration Process</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="list-data">
+                    <lable>Application Subtype/Nature of Deed</lable>
+                    <p>Sale</p>
+                </div>
+                <div class="list-data">
+                    <lable>Date of Application</lable>
+                    <p>20-08-2020</p>
+                </div>
+                <a class="btn btn-success btn-block" href="generate-document.html">Generate Document</a>
+            </li>
+            <li class="box-radius">
+                <div class="list-data" style="width: 50%;float: left; padding-right: 5px">
+                    <lable>Application Number</lable>
+                    <p>204575455</p>
+                </div>
+                <div class="list-data">
+                    <lable>Type Of Application</lable>
+                    <p>Registration Process</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class="list-data">
+                    <lable>Application Subtype/Nature of Deed</lable>
+                    <p>Sale</p>
+                </div>
+                <div class="list-data">
+                    <lable>Date of Application</lable>
+                    <p>25-08-2020</p>
+                </div>
+                <a class="btn btn-success btn-block" href="#">Payment Pending</a>
+            </li>
+        </ul>
+
+            <!--   web view applicatin -->
+            <div class="table-responsive-sm d-mobile-none d-web">
+                <table class="table table-bordered table-mobile table-striped">
+                    <thead>
+                    <tr>
+                        <th>Application Number</th>
+                        <th>Type Of Application</th>
+                        <th>Application Subtype/Nature of Deed</th>
+                        <th>Date of Application</th>
+                        <th class="text-center">status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+                        <tr>
+                            <td>204575455</td>
+                            <td>Registration Process</td>
+                            <td>Sale</td>
+                            <td>20-08-2020</td>
+                            <td class="text-center"><a class="btn btn-success btn-sm btn-block" href="generate-document.html">Generate Document</a></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".menu-toggle").click(function(){
+            $(".sidebar").toggleClass("open");
+            $("body").toggleClass("web-sidebar-open");
+        });
+    });
+</script>
+</body>
+</html>

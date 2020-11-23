@@ -43,9 +43,14 @@
             -ms-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
             background: #ffffff;
         }
+        .index-header{
+            display: none;
+        }
         @media (min-width: 768px) {
             .signin-wrapper h4{
                 margin-top: 0px;
+                text-align: center;
+                margin-bottom: 10px;
             }
             .form-white-bg{
                 max-width: 470px;
@@ -53,6 +58,41 @@
             .btn-block {
                 width: 100%;
             }
+            .mobile-header, .sidebar{
+                display: none;
+            }
+            .web-sidebar-open{
+                padding: 0px;
+            }
+            .content-wrapper{
+                height: calc(100vh - 116px);
+                margin-top: 116px;
+                background: #ebf0f6 url(images/web-splash-bg.jpg);
+                background-size: cover;
+                background-position: center;
+                padding-bottom: 0;
+            }
+            .index-header {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: #538924 url("images/sidebar-bg.png") repeat;
+                padding: 10px 100px;
+                background-size: 250px;
+            }
+            .sp-wrapper img{
+                display: none;
+            }
+            .signin-wrapper{
+                max-width: 466px;
+                margin: 0 auto;
+            }
+
+
         }
     </style>
 </head>
@@ -80,10 +120,18 @@
         <li><a href="View-market-value-of-lands-for-Stamp-Duty.html">View market value of lands for Stamp Duty</a></li>
     </ul>                                
 </div>
+<div class="index-header">
+    <a href="index.html" class="logo-index">
+        <img src="images/logo-index.png" alt="">
+    </a>
+    <div class="cm">
+        <img src="images/cm.png" alt="">
+    </div>
+</div>
 <div class="content-wrapper">
     <div class="signin-wrapper">
         <h4>Citizen Login for Slot Booking</h4>
-        <hr>
+        <hr class="d-web-none">
         <form action="Citizen-Dashboard.html" class="form-white-bg">
             <p>New user please <a href="signup.html">Sign Up</a> Here</p>
             <div class="form-group">

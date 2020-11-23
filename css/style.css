@@ -564,6 +564,15 @@ select.form-control:not([size]):not([multiple]){
     .card-header{
         font-size: 15px;
     }
+    .index-header img{
+        max-width: 100%;
+    }
+    .logo-index {
+        padding-right: 10px;
+    }
+    .cm {
+        padding-left: 10px;
+    }
 
 }
 
